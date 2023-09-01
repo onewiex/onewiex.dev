@@ -3832,7 +3832,7 @@ addOWXComponent.addEventListener('click', async () => {
       method: 'wallet_watchAsset',
       params: {
         type: 'trc20',
-        options: { address: 'TRVXcwQYHRVfkfFbyQUoDy5uu1Bjz4tCwB' },
+        options: { address: OWXContractAddress },
       },
     });
     console.log(tx);
@@ -4104,5 +4104,5 @@ copyWalletAddressComponent.addEventListener('click', () => {
 
 const copyOWXContractComponent = document.getElementById('copy-owx-contract');
 copyOWXContractComponent.addEventListener('click', () => {
-  navigator.clipboard.writeText('TF7iETvAFbAHwuz2FJL2qwHBdJnwm8Ww4F');
+  navigator.clipboard.writeText(OWXContractAddress);
 });
