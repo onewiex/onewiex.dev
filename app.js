@@ -3726,8 +3726,9 @@ async function getTokenPrice() {
 
     const trxOwxRate = document.getElementById('trx-owx-rate');
     const usdOwxRate = document.getElementById('usd-owx-rate');
-    trxOwxRate.textContent = `${usdPerOwx * usdtPerTrx} TRX/OWX`;
-    usdOwxRate.textContent = `${usdPerOwx} USD/OWX`;
+    // trxOwxRate.textContent = `${usdPerOwx * usdtPerTrx} TRX/OWX`;
+    trxOwxRate.textContent = `1 $OWX = ${usdPerOwx * usdtPerTrx} TRX`;
+    usdOwxRate.textContent = `1 $OWX = ${usdPerOwx} USD`;
   } catch (error) {
     alert(error);
   }
